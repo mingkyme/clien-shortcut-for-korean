@@ -15,7 +15,6 @@ keyData["ㅓ"] = "/service/board/jirum";
 keyData["ㄴ"] = "/service/board/sold";
 keyData["ㅠ"] = "/service/board/hongbo";
 keyData["ㅗ"] = "/service/";
-keyData["a"] = "/service/";
 var shortCutIsVaild = false;
 setTimeout(function () {
     shortCutIsVaild = true;
