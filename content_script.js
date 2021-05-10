@@ -36,3 +36,21 @@ $(document).on('keydown', function (e) {
         }
     }
 });
+
+$(document).on('keydown',function(e){
+    if(shortCutIsVaild){
+        var tagName = e.target.nodeName;
+        if ((tagName != 'INPUT') && (tagName != 'TEXTAREA') && (tagName != 'SELECT') && (e.target.className.indexOf('fr-view') == -1) && (e.target.className.indexOf('comment-textarea') == -1)) {
+            if (e.ctrlKey) return;
+            if (e.shiftKey) return;
+            if (e.altKey) return;
+            if (e.metaKey) return;
+            var pressedKey = e.key.toLowerCase();
+            if(pressedKey == 'ㄱ'){
+                if ($('*[data-role=comment-newest]').length) {
+                    $('*[data-role=comment-newest] button').trigger('click');
+                }
+            }
+        }
+    }
+});
