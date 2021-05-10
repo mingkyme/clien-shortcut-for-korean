@@ -1,6 +1,6 @@
 {
   "name": "클리앙 한글 단축키",
-  "version": "1.0",
+  "version": "2.0",
   "description": "맥에서 한글상태의 단축키 기능을 활성화 합니다.",
   "author": "MINGKYME",
   "content_scripts": [
